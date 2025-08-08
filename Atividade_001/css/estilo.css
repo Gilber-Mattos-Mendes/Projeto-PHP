@@ -10,10 +10,11 @@ header {
     color: white;
     text-align: center;
     font-family: Arial, sans-serif;
+    font-size: 30px;
 }
 
 main{
-    padding: 30px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,13 +22,13 @@ main{
 }
 
 .caixa {
-    padding: 70px;
+    padding: 80px;
     background-color: white;
     color: black;
     align-items: center;
     text-align: center;
-    border-radius: 6px;
-    box-shadow: 2px 2px 8px 5px rgba(83, 83, 83, 0.5);
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px 5px rgba(83, 83, 83, 0.2);
     font-family: Arial, sans-serif;
     font-size: 22px;
 }

@@ -9,7 +9,6 @@
 <body>
 
     <header>
-        <!-- Título da página -->
         <h1>Resultado da Operação:</h1>
     </header>
 
@@ -42,14 +41,12 @@
                     }
                 }
 
-                echo "O resultado de $valor1 $simbolo $valor2 = $resultado "; 
+                echo "O resultado de <strong>$valor1 $simbolo $valor2 = $resultado </strong> "; 
             ?>
 
             <a href="index.php">Fazer outro cálculo</a>
         </p class="caixa">
     </main>
-
-    <!-- Link para voltar à página do formulário -->
      
     
 </body>
