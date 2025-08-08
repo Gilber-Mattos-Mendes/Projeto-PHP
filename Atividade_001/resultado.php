@@ -10,7 +10,7 @@
 
     <header>
         <!-- Título da página -->
-        <h1>Resultado:</h1>
+        <h1>Resultado da Operação:</h1>
     </header>
 
     <main>
