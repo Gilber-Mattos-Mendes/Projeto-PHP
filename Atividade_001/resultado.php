@@ -8,29 +8,49 @@
 </head>
 <body>
 
-    <!-- Título da página -->
-     <h1>Resultado:</h1>
+    <header>
+        <!-- Título da página -->
+        <h1>Resultado:</h1>
+    </header>
 
-    <p>
-        <?php
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $valor1 = $_POST["valor1"];
-                $valor2 = $_POST["valor2"];
-                $operacao = $_POST["opcoes"];
+    <main>
+        <p class="caixa">
+            <?php
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    $valor1 = $_POST["valor1"];
+                    $valor2 = $_POST["valor2"];
+                    $operacao = $_POST["opcoes"];
 
-                if ($operacao == "soma") {
-                    $resultado = $valor1 + $valor2;
-                    $simbolo = "+";
-                } else if ($operacao == "subtracao") {
-                    $resultado = $valor1 - $valor2;
-                    $simbolo = "-";
+                    if ($operacao == "soma") {
+                        $resultado = $valor1 + $valor2;
+                        $simbolo = "+";
+                    } else if ($operacao == "subtracao") {
+                        $resultado = $valor1 - $valor2;
+                        $simbolo = "-";
+                    } else if ($operacao == "divisao") {
+                        if ($valor2 != 0) {
+                            $resultado = $valor1 / $valor2;
+                            $simbolo = "÷";
+                        } else {
+                            $resultado = "Erro: Divisão por zero não é permitida.";
+                        }
+                    } else if ($operacao == "multiplicacao") {
+                        $resultado = $valor1 * $valor2;
+                        $simbolo = "x";
+                    } else {
+                        $resultado = "Operação Inválida";
+                    }
                 }
-            }
-        ?>
-    </p>
+
+                echo "O resultado de $valor1 $simbolo $valor2 = $resultado "; 
+            ?>
+
+            <a href="index.php">Fazer outro cálculo</a>
+        </p class="caixa">
+    </main>
 
     <!-- Link para voltar à página do formulário -->
-     <a href="index.php">Voltar</a>
+     
     
 </body>
 </html>

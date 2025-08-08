@@ -1,14 +1,15 @@
 body {
-    margin: 0px;
+    margin: auto;
     background-color: rgb(212, 230, 253);
     align-items: center;
 }
 
 header {
     padding: 20px;
-    background-color: dodgerblue;
+    background-color: rgb(3, 107, 211);
     color: white;
     text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 main{
@@ -26,24 +27,52 @@ main{
     align-items: center;
     text-align: center;
     border-radius: 6px;
-    box-shadow: 2px 2px 8px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 8px 5px rgba(83, 83, 83, 0.5);
+    font-family: Arial, sans-serif;
+    font-size: 22px;
 }
 
 #numero1 {
-    padding: 5px;
+    padding: 7px 70px;
+    text-align: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
 }
 
 #numero2 {
-    padding: 5px;
+    padding: 7px 70px;
+    text-align: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
 }
 
 #opcoes {
-    padding: 5px;
+    padding: 7px 95px;
+    border-radius: 4px;
+    text-align: left;
+    font-family: Arial, sans-serif;
 }
 
 #BtnCalcular {
-    background-color: dodgerblue;
+    background-color: rgb(3, 107, 211);
     color: white;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 9px 130px;
+    border-radius: 3px;
+    border-style: none;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    display: block;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(3, 107, 211);
+    font-family: Arial, sans-serif;
+    margin: 15px auto 0 auto;
+}
+
+a:hover {
+    text-decoration: underline;
 }

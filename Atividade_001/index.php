@@ -21,11 +21,12 @@
                 <input type="number" id="numero2" name="valor2" required><br><br>
 
                 <label for="filtro">Escolha o operador:</label><br>
-                <select id="opcoes">
-                    <option value="soma" id="td">Soma</option>
-                    <option value="subtracao" id="al">Subtração</option>
-                    <option value="divisao" id="cos">Divisão</option>
-                    <option value="multiplicacao" id="cos">Multiplicação</option>
+                <select id="opcoes" name="opcoes">
+                    <option value="Selecione">--Selecione--</option>
+                    <option value="soma">Soma(+)</option>
+                    <option value="subtracao">Subtração(-)</option>
+                    <option value="multiplicacao">Multiplicação(x)</option>
+                    <option value="divisao">Divisão(÷)</option>
                 </select><br><br>
 
                 <button type="submit" id="BtnCalcular">Calcular</button>
