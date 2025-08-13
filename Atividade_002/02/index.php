@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="public/css/estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>Tabuada<h1>
+    </header>
+
+     <main>
+        <h2>Cadastro do Aluno</h2>
+        <section class="container-cadastro">
+            <form action="">
+                <div id="bloco-lado-a-lado">
+                    <fieldset id="dados">
+                        <legend>Dados escolares</legend>
+
+                        <div id="dados-escolares">
+                            <div class="linha">
+                                <label for="nome">Nome Completo:</label>
+                                <input type="text" name="nome" id="nome_completo" placeholder="Ex.: João das Neves Silva">
+                            </div>
+
+                            <div class="linha">
+                                <label for="freq">Frequência(%):</label>
+                                <input type="number" name="freq" id="frequencia"  placeholder="0 a 100">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="notas">
+                        <legend>Notas</legend>
+                        <div class="linha">
+                            <label for="n1">1º Bimestre:</label>
+                            <input type="number" name="n1" id="nota1" min="0" max="25">
+                        </div>
+                        <div class="linha">
+                            <label for="n2">2º Bimestre:</label>
+                            <input type="number" name="n2" id="nota2"  min="0" max="25">
+                        </div>
+                        <div class="linha">
+                            <label for="n3">3º Bimestre:</label>
+                            <input type="number" name="n3" id="nota3" placeholder="0 a 25" min="0" max="25">
+                        </div>
+                        <div class="linha">
+                            <label for="n4">4º Bimestre:</label>
+                            <input type="number" name="n4" id="nota4" placeholder="0 a 25" min="0" max="25">
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+            <button type="button" id="btn-adicionar">Adicionar Aluno</button>
+        </section>
+
+        <section class="lista-alunos">
+            <h2>Lista de Alunos</h2>
+            <article>
+                <table>
+                    <thead>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Frequência</th>
+                        <th scope="col">Média</th>
+                        <th scope="col">Situação</th>
+                        <th scope="col">Ação</th>
+                    </thead>
+                    <tbody id="corpo-tabela">
+                        <tr id="mensagem-vazia">
+                            <td colspan="5">Não há alunos cadastrados.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+    </main>
+
+    
+</body>
+</html>

@@ -28,7 +28,7 @@
         -->
         <input type="text" name="mensagem" required>
 
-        <!-- Botão que envia o formulário -->
+        <!-- Botão que envia o formulário --> 
         <button type="submit">Enviar</button>
     </form>
     

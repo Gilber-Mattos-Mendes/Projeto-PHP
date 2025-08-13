@@ -30,11 +30,11 @@
                 </select><br><br>
 
                 <button type="submit" id="BtnCalcular">Calcular</button>
-            </form>
+            </form> 
         </div>
     </main>
 
-    <!-- Link para o JavaScript externo -->
+    <!-- Link para o JavaScript externo --> 
     <script src="js/script.js"></script>
 
 </body>
