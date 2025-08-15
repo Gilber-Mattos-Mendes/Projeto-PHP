@@ -3,81 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabuada</title>
+    <title>Média do Aluno</title>
     <link rel="stylesheet" href="public/css/estilo.css">
+
 </head>
 <body>
 
     <header>
-        <h1>Tabuada<h1>
+        <h1>Situação do Aluno</h1>
     </header>
 
-     <main>
-        <h2>Cadastro do Aluno</h2>
-        <section class="container-cadastro">
-            <form action="">
-                <div id="bloco-lado-a-lado">
-                    <fieldset id="dados">
-                        <legend>Dados escolares</legend>
+    <main>
+        <h2>Consultar Médio do Aluno</h2>
 
-                        <div id="dados-escolares">
-                            <div class="linha">
-                                <label for="nome">Nome Completo:</label>
-                                <input type="text" name="nome" id="nome_completo" placeholder="Ex.: João das Neves Silva">
-                            </div>
+        <div>
+            <form id="formulario" method="POST" action="public/processa.php">
+                <label>Digite o Nome do Aluno:</label><br>
+                <input type="text" id="nome" name="nome_aluno" required><br><br>
 
-                            <div class="linha">
-                                <label for="freq">Frequência(%):</label>
-                                <input type="number" name="freq" id="frequencia"  placeholder="0 a 100">
-                            </div>
-                        </div>
-                    </fieldset>
+                <label>Digite a 1ª Nota:</label><br>
+                <input type="number" id="nota1" name="nota1" required><br><br>
+                <label>Digite a 2ª Nota:</label><br>
+                <input type="number" id="nota2" name="nota2" required><br><br>
+                <label>Digite a 3ª Nota:</label><br>
+                <input type="number" id="nota3" name="nota3" required><br><br>
+                <label>Digite a 4ª Nota:</label><br>
+                <input type="number" id="nota4" name="nota4" required><br><br>
 
-                    <fieldset id="notas">
-                        <legend>Notas</legend>
-                        <div class="linha">
-                            <label for="n1">1º Bimestre:</label>
-                            <input type="number" name="n1" id="nota1" min="0" max="25">
-                        </div>
-                        <div class="linha">
-                            <label for="n2">2º Bimestre:</label>
-                            <input type="number" name="n2" id="nota2"  min="0" max="25">
-                        </div>
-                        <div class="linha">
-                            <label for="n3">3º Bimestre:</label>
-                            <input type="number" name="n3" id="nota3" placeholder="0 a 25" min="0" max="25">
-                        </div>
-                        <div class="linha">
-                            <label for="n4">4º Bimestre:</label>
-                            <input type="number" name="n4" id="nota4" placeholder="0 a 25" min="0" max="25">
-                        </div>
-                    </fieldset>
-                </div>
+                <button type="submit" id="BtnConsultar">Consultar</button>
             </form>
-            <button type="button" id="btn-adicionar">Adicionar Aluno</button>
-        </section>
-
-        <section class="lista-alunos">
-            <h2>Lista de Alunos</h2>
-            <article>
-                <table>
-                    <thead>
-                        <th scope="col">Nome</th>
-                        <th scope="col">Frequência</th>
-                        <th scope="col">Média</th>
-                        <th scope="col">Situação</th>
-                        <th scope="col">Ação</th>
-                    </thead>
-                    <tbody id="corpo-tabela">
-                        <tr id="mensagem-vazia">
-                            <td colspan="5">Não há alunos cadastrados.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
-        </section>
+        </div>
+        
     </main>
-
     
 </body>
 </html>
