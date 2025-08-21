@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de Números Primos</title>
+    <title>Jogo de Adivinhação</title>
     <link rel="stylesheet" href="public/css/estilo.css">
 </head>
 <body>
 
     <header>
-        <h1>Gerador de números Primos<h1>
+        <h1>Adivinhe o Número<h1>
     </header>
 
     <main>
         <div>
             
             <form id="formulario" method="POST" action="public/processa.php">
-                <label>Digite um número máximo:</label><br>
+                <label>Digite um número:</label><br>
                 <input type="number" id="numero" name="numero" required><br><br>
                 <button type="submit" id="BtnMostrar">Mostrar</button>
             </form>

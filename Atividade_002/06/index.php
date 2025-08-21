@@ -8,6 +8,26 @@
 </head>
 <body>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <header>
         <h1>Gerador de números Primos<h1>
     </header>
